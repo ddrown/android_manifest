@@ -5,8 +5,11 @@
            fetch="https://android.googlesource.com/" />
     
   <remote  name="cna"
-           fetch="http://github.com/CNA/"
+           fetch="git://github.com/CNA/"
            review="review.codenameandroid.com" />
+
+  <remote  name="ddrown"
+           fetch="git://github.com/ddrown/" />
    
   <remote  name="github"
            fetch="http://github.com/" />
@@ -290,9 +293,10 @@
   <project path="vendor/moto" name="proprietary_vendor_moto"  />
   <project path="vendor/samsung" name="proprietary_vendor_samsung" />
 
-  <!--  CNA Mod Manifiest  -->
-  <project path="android" name="android_manifest" revision="mod-4.0.3" />
-
   <!--  Sixstring's buildbot  -->  
   <project path="vendor/cna/bot" name="sixstringsg/pseudo_buildbot" remote="github" revision="master" />
+
+  <!-- IPv6 changes -->
+  <project path="android" name="android_manifest" remote="ddrown" revision="mod-4.0.3" />
+  <project path="external/radvd" name="android_external_radvd" remote="ddrown" />
 </manifest>
