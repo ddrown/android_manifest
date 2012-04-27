@@ -298,6 +298,6 @@
 
   <!-- IPv6 changes -->
   <project path="android" name="android_manifest" remote="ddrown" revision="mod-4.0.3" />
-  <project path="external/radvd" name="android_external_radvd" remote="ddrown" />
-  <project path="external/android-clat" name="android_external_android-clat" remote="ddrown" />
+  <project path="external/radvd" name="android_external_radvd" remote="ddrown" revision="master" />
+  <project path="external/android-clat" name="android_external_android-clat" remote="ddrown" revision="master" />
 </manifest>
