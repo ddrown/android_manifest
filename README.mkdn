@@ -1,36 +1,7 @@
-Codename Android
+Forked from Codename Android
 ===========
 To get started with Codename Android, you'll need to get
 familiar with [Git and Repo](http://source.android.com/source/version-control.html).
-
-Register an account on our Gerrit
----------------
-First you need to generate an sshkey
-
-At a terminal window type
-
-    ssh-keygen
-
-then hit enter through the prompts...
-
-browse to ~/.ssh by running:
-
-    cd ~/.ssh
-    
-and copy your sshkey with:
-
-    cat id_rsa.pub
-    
-copy what is shown to your clipboard
-
-Go to our [Gerrit Review Site](http://review.codenameandroid.com)
-
-Upper right hand corner hit 'register'
-Select with google/yahoo account and signin
-Select a Name
-Select a username <!write this down!> a.k.a <gerrit.username>
-Paste the ssh key you got from the last step of 'Generate a sshkey'
-Your Done!!
 
 Initializing a Build Environment
 --------------------------
@@ -69,24 +40,13 @@ Now enter the following to initialize the repository:
 Repositories:
 ---------------
 
-Before you continue --> run this in the terminal
-
-	git config --global review.review.codenameandroid.com.username <gerrit username>
-
-to initialize the stock rom repository
+to initialize the modified rom repository
 
 
-    repo init -u http://github.com/CNA/android_manifest.git -b stock-4.0.3
-    
-    
-or to initialize the modified rom repository
-
-
-    repo init -u http://github.com/CNA/android_manifest.git -b mod-4.0.3
+    repo init -u http://github.com/ddrown/android_manifest.git -b mod-4.0.3
 
     
-    
-Then to start the Sync. (This is gonna take awhile 6+ GB's to download)
+Then to start the Sync. (This will take a while, 6+ GBs to download)
 
     repo sync
 
@@ -96,76 +56,21 @@ Building the System
 
 The basic sequence of build commands is as follows:
 Initialize
-Initialize the environment with the envsetup.sh script. Note that replacing "source" with a single dot saves a few characters, and the short form is more commonly used in documentation.
+Initialize the environment with the envsetup.sh script.
 
 
     . build/envsetup.sh
     lunch
 
 
-Once you type in the lunch command you will be presented with a list of options to choose to build from. the “stock” builds are what you want to choose if you chose to download the stock branch and “cna” is what you want to choose if you chose to download the “modified” branch
+Once you type in the lunch command you will be presented with a list of options to choose to build from.  Only crespo is currently supported.
 
 
 crepso = Nexus S
 
-crespo4g = Nexus S 4G
-
-maguro = Galaxy Nexus (GSM)
-
-toro = Galaxy Nexus (CDMA)
-
-stingray = Xoom 4G
-
-stingray_cdma = Xoom 3G
-
-umts_everest = Xoom Euro
-
-wingray = Xoom WiFi
-
-galaxysmtd = Galaxy S
-
-captivatemtd = Captivate
-
-fascinatemtd = Fascinate
-
-vibrantmtd = Vibrant
-
-inc = Incredible
-
-olympus = Atrix
-
-tf101 = Transformer Eee Pad (WiFi)
-
-tf101g = Transformer Eee Pad (3G)
-
-tf201 = Tranformer Prime
-
-
 Enter the number of the build you want to start and press enter
-
 
 
 Build the Code:
 
     mka squish CNA_RELEASE=true
-
-
-Submitting Patches
-------------------
-Patches are always welcome!  Please submit your patches via Codename Android Gerrit!
-You can do this by using these commands:
-
-    (From root android directory)
-    . build/envsetup.sh
-    (Go to the repo you are patching, make your changes and commit) and use
-    git push ssh://(gerrit username)@cdn-gerrit.goo-inside.me:29418/(repo name) HEAD:refs/for/(branch name)
-    to upload your patches
-
-
-Make your changes and commit with a detailed message, starting with what you are working with (i.e. vision: Update Kernel)
-Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
-
-To view the status of your and others' patches, visit [Codename Android Code Review](http://review.codenameandroid.com/)
-
-
-If you have any issues please contact blueharford through rootzwiki.com PM or Codenamedroid and #codenameandroid irc on freenode
