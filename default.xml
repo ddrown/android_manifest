@@ -46,7 +46,6 @@
   <project path="device/moto/wingray" name="android_device_moto_wingray" />
   <project path="device/samsung/aries-common" name="android_device_samsung_aries-common" revision="mod-4.0.3" />
   <project path="device/samsung/captivatemtd" name="android_device_samsung_captivatemtd" />
-  <project path="device/samsung/crespo" name="android_device_samsung_crespo" />
   <project path="device/samsung/crespo4g" name="android_device_samsung_crespo4g" />
   <project path="device/samsung/epic4gtouch" name="android_device_samsung_epic4gtouch" />
   <project path="device/samsung/fascinatemtd" name="android_device_samsung_fascinatemtd" />
@@ -176,7 +175,6 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="external/yaffs2" name="android_external_yaffs2" />
   <project path="external/zlib" name="platform/external/zlib" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
-  <project path="frameworks/base" name="android_frameworks_base" revision="mod-4.0.3" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="frameworks/compile/slang" name="android_frameworks_compile_slang" />
@@ -259,10 +257,8 @@
   <project path="prebuilt" name="platform/prebuilt" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="sdk" name="platform/sdk" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="system/bluetooth" name="platform/system/bluetooth" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
-  <project path="system/core" name="android_system_core" />
   <project path="system/extras" name="android_system_extras" />
   <project path="system/media" name="platform/system/media" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
-  <project path="system/netd" name="platform/system/netd" remote="aosp" revision="refs/tags/android-4.0.3_r1" />
   <project path="system/vold" name="android_system_vold" />
 
   <!--   Proprietary Apps  -->
@@ -300,4 +296,8 @@
   <project path="android" name="android_manifest" remote="ddrown" revision="mod-4.0.3" />
   <project path="external/radvd" name="android_external_radvd" remote="ddrown" revision="master" />
   <project path="external/android-clat" name="android_external_android-clat" remote="ddrown" revision="master" />
+  <project path="system/netd" name="android_system_netd" remote="ddrown" revision="ipv6" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="ddrown" revision="mod-4.0.3" />
+  <project path="system/core" name="android_system_core" remote="ddrown" revision="mod-4.0.3" />
+  <project path="device/samsung/crespo" name="android_device_samsung_crespo" remote="ddrown" revision="mod-4.0.3" />
 </manifest>
