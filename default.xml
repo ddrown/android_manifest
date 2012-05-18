@@ -282,7 +282,7 @@
   <!-- Proprietary Vendors -->
   <project path="vendor/asus/tf101" name="android_vendor_asus_tf101" />
   <project path="vendor/asus/tf201" name="vendor_proprietary_asus_tf201" />
-  <project path="vendor/cna" name="android_vendor_cna" />
+  <project path="vendor/cna" name="android_vendor_cna" remote="ddrown" revision="mod-4.0.3" />
   <project path="vendor/google/apps" name="android_vendor_google_apps" />
   <project path="vendor/htc" name="proprietary_vendor_htc" />
   <project path="vendor/imgtec" name="proprietary_vendor_imgtec" />
