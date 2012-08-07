@@ -319,7 +319,6 @@
   <project path="system/core" name="CyanogenMod/android_system_core" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" />
   <project path="system/media" name="CyanogenMod/android_system_media" />
-  <project path="system/netd" name="CyanogenMod/android_system_netd" />
   <project path="system/security" name="CyanogenMod/android_system_security" />
   <project path="system/su" name="CyanogenMod/android_system_su" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" />
@@ -329,7 +328,11 @@
   <project path="vendor/tmobile/products/themes" name="CyanogenMod/android_vendor_tmobile_products_themes" />
 
   <!-- IPv6 Changes -->
-  <project path="vendor/cm" name="ddrown/android_vendor_cm" />
+  <project path="vendor/cm" name="android_vendor_cm" remote="ddrown" />
   <project path="external/radvd" name="android_external_radvd" remote="ddrown" revision="master" />
   <project path="external/android-clat" name="android_external_android-clat" remote="ddrown" revision="master" />
+  <project path="system/netd" name="android_system_netd" remote="ddrown" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="ddrown" />
+  <project path="system/core" name="android_system_core" remote="ddrown" />
+  <project path="device/samsung/crespo" name="android_device_samsung_crespo" remote="ddrown" />
 </manifest>
