@@ -229,7 +229,6 @@
   <project path="frameworks/opt/mailcommon" name="CyanogenMod/android_frameworks_opt_mailcommon" />
   <project path="frameworks/opt/mms" name="CyanogenMod/android_frameworks_opt_mms" />
   <project path="frameworks/opt/photoviewer" name="CyanogenMod/android_frameworks_opt_photoviewer" />
-  <project path="frameworks/opt/telephony" name="CyanogenMod/android_frameworks_opt_telephony" />
   <project path="frameworks/opt/vcard" name="CyanogenMod/android_frameworks_opt_vcard" />
   <project path="frameworks/rs" name="CyanogenMod/android_frameworks_rs" />
   <project path="frameworks/support" name="CyanogenMod/android_frameworks_support" />
@@ -375,7 +374,8 @@
   <project path="external/android-clat" name="android_external_android-clat" remote="ddrown" revision="master" />
   <project path="system/netd" name="android_system_netd" remote="ddrown" />
   <project path="frameworks/base" name="android_frameworks_base" remote="ddrown" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ddrown" />
   <project path="system/core" name="android_system_core" remote="ddrown" />
-  <project path="device/samsung/crespo" name="android_device_samsung_crespo" remote="ddrown" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="ddrown" />
 
 </manifest>
