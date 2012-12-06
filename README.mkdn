@@ -1,5 +1,26 @@
-CyanogenMod
-===========
+CyanogenMod (464xlat)
+=====================
+
+
+Getting Started
+---------------
+
+To get started with Android/CyanogenMod, you'll need to get
+familiar with [Git and Repo](http://source.android.com/download/using-repo).
+
+To initialize your local repository using the CyanogenMod trees, use a command like this:
+
+    repo init -u git://github.com/ddrown/android_manifest.git -b jellybean-4.2
+
+Then to sync up:
+
+    repo sync
+
+Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
+
+For more information on this Github Organization and how it is structured, 
+please [read the wiki article](http://wiki.cyanogenmod.org/index.php/Github_Organization)
+
 
 Submitting Patches
 ------------------
@@ -22,29 +43,3 @@ Commit your patches in a single commit. Squash multiple commit using this comman
 
 To view the status of your and others' patches, visit [CyanogenMod Code Review](http://review.cyanogenmod.org/)
 
-
-Getting Started
----------------
-
-To get started with Android/CyanogenMod, you'll need to get
-familiar with [Git and Repo](http://source.android.com/download/using-repo).
-
-To initialize your local repository using the CyanogenMod trees, use a command like this:
-
-    repo init -u git://github.com/CyanogenMod/android.git -b jellybean
-
-Then to sync up:
-
-    repo sync
-
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
-
-For more information on this Github Organization and how it is structured, 
-please [read the wiki article](http://wiki.cyanogenmod.org/index.php/Github_Organization)
-
-Buildbot
---------
-
-All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.
-
-You can view the current build statuses at [CyanogenMod Jenkins](http://jenkins.cyanogenmod.org/)
